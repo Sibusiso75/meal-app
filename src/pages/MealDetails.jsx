@@ -26,15 +26,17 @@ const MealDetail = () => {
   </Helmet>
   <main className="meal-detail">
     <img src={meal.strMealThumb} alt={meal.strMeal} className="meal-detail-img" />
-    <section className="meal-detail-info">
+    <section >
       <h2>{meal.strMeal}</h2>
       <p><strong>Category:</strong> {meal.strCategory}</p>
       <p><strong>Area:</strong> {meal.strArea}</p>
       <p><strong>Instructions:</strong></p>
       <p className="instructions">{meal.strInstructions}</p>
-      <a  style={{background:"red", color:"white"}}href={meal.strYoutube} target="_blank" rel="noopener noreferrer" className="youtube-link">
-       Watch YouTube video <FaYoutube/>
-      </a>
+     
+      <a className="youtube-link" href={meal.strYoutube}>
+        Watch a Video <FaYoutube />  
+		
+	</a>
     </section>
   </main>
       </>

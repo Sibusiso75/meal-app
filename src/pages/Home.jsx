@@ -10,13 +10,23 @@ const Home = () => {
   const [page, setPage] = useState(1);
 
   const fetchMeals = (url) => {
-    fetch(url)
-      .then(res => res.json())
+    fetch(url)          
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
       .then(data => {
         const results = data.meals || [];
         setMeals(results);
         setFilteredMeals(results.slice(0, 12));
         setPage(1);
+      })
+      .catch(error => {
+        console.error('Error fetching meals:', error);
+        setMeals([]);
+        setFilteredMeals([]);
       });
   };
 

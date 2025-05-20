@@ -1,7 +1,8 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background-image: url("src/assets/freepik__a-beautiful-black-background-with-subtle-textures-__8480.png");
+  padding: 0;
+  background-image: url("src/assets/abstract-background-with-low-poly-design.jpg");
   color: #fff;
 }
 
@@ -52,7 +53,7 @@ body {
 
 
 .meal-card {
-  background: #1e1e1e;
+  background-image: url("src/assets/freepik__a-beautiful-black-background-with-subtle-textures-__8480.png");
   border-radius: 5px;
   overflow: hidden;
   transition: transform 0.1s ease, box-shadow 0.4s ease;
@@ -156,6 +157,7 @@ body {
   padding: 2rem;
   background: #1e1e1e;
   margin-top: 2rem;
+
   color: #aaa;
 }
 
@@ -197,20 +199,21 @@ body {
 }
 
 .meal-detail {
-  max-width: 900px;
-  margin: 2rem auto;
-  background: #1e1e1e;
+  /* max-width: 900px; */
+  /* margin: 2rem auto; */
+  background:transparent;
   border-radius: 12px;
   padding: 2rem;
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  /* flex-direction: column; */
+  gap: 1rem;
   color: #fff;
   animation: fadeIn 0.6s ease-in-out;
 }
 
 .meal-detail-img {
-  width: 100%;
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -289,10 +292,9 @@ body {
 
 .youtube-link {
   display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.8rem 1.2rem;
-  background: #1db954;
-  color: black;
+  padding: 0.3rem;
+  background: red;
+  color: white;
   font-weight: bold;
   text-decoration: none;
   border-radius: 8px;
@@ -300,7 +302,7 @@ body {
 }
 
 .youtube-link:hover {
-  background: #17a442;
+cursor: pointer;
 }
 
 @media (min-width: 768px) {
