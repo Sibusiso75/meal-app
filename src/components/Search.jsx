@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 
-const SearchBar = ({ onSearch }) => {
+const Search = ({ onSearch }) => {
   const [query, setQuery] = useState('');
   const [ingredients, setIngredients] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -41,4 +41,4 @@ const SearchBar = ({ onSearch }) => {
   );
 };
 
-export default SearchBar;
+export default Search;

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import SearchBar from '../components/Searchbar';
+import { useEffect, useState } from 'react';
 import MealGrid from '../components/MealGrid';
 import Pagination from '../components/Pagination';
 import { Helmet } from 'react-helmet';
+import Search from '../components/Search';
 
 const Home = () => {
   const [meals, setMeals] = useState([]);
@@ -60,7 +60,7 @@ const Home = () => {
   <title>Meal Recipe App</title>
   <meta name="description" content="Discover, search, and explore delicious meal recipes by category or ingredient." />
 </Helmet>
-      <SearchBar onSearch={handleSearch} />
+      <Search onSearch={handleSearch} />
       <MealGrid meals={filteredMeals} />
       <Pagination currentPage={page} totalPages={totalPages} onPageChange={handlePageChange} />
     </div>
