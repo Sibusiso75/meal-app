@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 
 const SearchBar = ({ onSearch }) => {
@@ -36,7 +36,7 @@ const SearchBar = ({ onSearch }) => {
           <option key={c.strCategory} value={c.strCategory}>{c.strCategory}</option>
         ))}
       </select>
-      <FaSearch style={{padding:"20px",background:"teal", color:"white"}}onClick={() => onSearch(query)}/>
+      <FaSearch style={{padding:"20px",background:"teal", color:"white"}} onClick={() => onSearch(query)}/>
     </div>
   );
 };

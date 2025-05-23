@@ -45,11 +45,10 @@ const Home = () => {
     setPage(newPage);
     const start = (newPage - 1) * 12;
     setFilteredMeals(meals.slice(start, start + 12));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const totalPages = Math.ceil(meals.length / 12);
-
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
     <div>
