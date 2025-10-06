@@ -52,14 +52,17 @@ const Home = () => {
 
   return (
     <div>
-      <br />      
+          
       <br />
-      <br />
-
+<div className="content">
+  <h1 style={{textAlign:"center"}}>Explore meals</h1>
+</div>
       <Helmet>
   <title>Meal Recipe App</title>
   <meta name="description" content="Discover, search, and explore delicious meal recipes by category or ingredient." />
+
 </Helmet>
+
       <Search onSearch={handleSearch} />
       <MealGrid meals={filteredMeals} />
       <Pagination currentPage={page} totalPages={totalPages} onPageChange={handlePageChange} />

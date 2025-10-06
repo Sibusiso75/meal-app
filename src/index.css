@@ -14,13 +14,25 @@ body {
   color: white;
   font-size: 2rem;
 }
+.content{
+  justify-content:center;
+  color:lightgray;
+  margin:10px;
+  /* max-width:30px; */
+}
+
+.content h1{
+  /* font-size:70px; */
+  /* font-weight:60; */
+  line-height:23px;
+  margin-bottom:25px;
+}
 
 .search-bar {
   display: flex;
   justify-content: center;
   gap: 1rem;
- height:fit-content;
-  width:fit-content;
+ 
   padding: 1rem;
   flex-wrap: wrap;
 }
@@ -32,7 +44,7 @@ body {
   border: 1px solid white;
   border-radius: 6px;
   height:fit-content;
-  width:fit-content;
+  width:200px;
   color:rgba(255, 255, 255, 0.459);
   background:rgb(5, 0, 10);
   outline: none;
@@ -314,7 +326,7 @@ body {
 cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media screen (min-width: 767px) {
   .meal-detail {
     flex-direction: row;
   }
@@ -328,6 +340,19 @@ cursor: pointer;
     flex: 1;
     padding-left: 2rem;
   }
+  .search-bar input,
+.search-bar select {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 6px;
+  height:fit-content;
+  width:150px;
+  color:rgba(0, 0, 0, 0.46);
+  background:rgb(5, 0, 10);
+  outline: none;
+  transition: all 0.3s ease;
+}
 }
 
 @keyframes fadeIn {
