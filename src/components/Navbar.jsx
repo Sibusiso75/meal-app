@@ -1,13 +1,19 @@
+import React from 'react'
 import { Link } from 'react-router-dom';
+import {FaHome} from "react-icons/fa"
 
-const Navbar = () => (
-  <nav className="navbar">
-    <h2 className="logo">Meal Recipes</h2>
+
+function Navbar() {
+  return (
+    <nav className="navbar">
+<Link to="/" style={{color:"white",textDecoration:"none", fontWeight:"bold"}}>
+<FaHome/> Home </Link>
     <div className="nav-links">
-      <Link to="/">Home</Link>
+      
       <Link to="/favorites">Favorites</Link>
     </div>
-  </nav>
-);
+    </nav>
+  )
+}
 
-export default Navbar;
+export default Navbar

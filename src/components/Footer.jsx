@@ -5,15 +5,15 @@ import { MdEmail } from 'react-icons/md';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-content">
-        <div>
-          <h3>Contact Us</h3>
+      <div>
+        {/* <div>
+          <h5>Contact Us</h5>
           <p><MdEmail/> sibusisomatebese75@gmail.com</p>
           <p><FaPhone/> +27 63 1008729</p>
-        </div>
+        </div> */}
 
         <div>
-          <h3>Follow Us</h3>
+          <h5>Follow Us</h5>
           <div className="social-icons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebook/></a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter/></a>
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="footer-bottom">© 2025 Meal Recipe App. All rights reserved.</p>
+      <p className="footer-bottom">© Sibusiso Matebese. All rights reserved.</p>
     </footer>
   );
 };

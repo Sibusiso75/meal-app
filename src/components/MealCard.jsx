@@ -25,7 +25,7 @@ const MealCard = ({ meal }) => {
   return (
     <div className="meal-card">
       <Link to={`/meal/${meal.idMeal}`} style={{color:"white", textDecoration:"none", textAlign:"center"}}>
-        <img src={meal.strMealThumb} loading="lazy" alt={meal.strMeal} />
+        <img src={meal.strMealThumb}  alt={meal.strMeal} />
         <p>{meal.strMeal}</p>
       </Link>
       <button className={`favorite ${isFavorite ? 'active' : ''}`} onClick={toggleFavorite}>
