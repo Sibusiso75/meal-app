@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import {FaRegAngry, FaRegThumbsUp, FaSadCry, FaSmile, FaStar, FaStarAndCrescent, FaThumbsUp, FaThumbtack} from "react-icons/fa"
+import {FaRegThumbsUp, FaThumbsUp} from "react-icons/fa"
 import { FaFaceLaughBeam, FaStarHalfStroke, FaStarOfDavid } from 'react-icons/fa6';
 import { MdStarBorder } from 'react-icons/md';
 const MealCard = ({ meal }) => {
@@ -29,7 +29,7 @@ const MealCard = ({ meal }) => {
         <p>{meal.strMeal}</p>
       </Link>
       <button className={`favorite ${isFavorite ? 'active' : ''}`} onClick={toggleFavorite}>
-        {isFavorite ? <FaStar/> : <MdStarBorder/>}
+        {isFavorite ? <FaThumbsUp/> : <FaRegThumbsUp/>}
       </button>
     </div>
   );

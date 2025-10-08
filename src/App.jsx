@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
- <Suspense fallback={<h3>Loading ...</h3>}>     
+ <Suspense fallback={<h3 style={{margin:"50px"}}>Loading ...</h3>}>     
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/meal/:id" element={<MealDetails />} />

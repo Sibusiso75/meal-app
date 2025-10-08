@@ -134,7 +134,7 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background: none;
   border: none;
   color: #fff;
@@ -143,7 +143,7 @@ body {
 }
 
 .favorite.active {
-  color: gold;
+  color: rgb(53, 53, 146);
 }
 
 .pagination {
@@ -330,7 +330,10 @@ body {
 cursor: pointer;
 }
 
-@media (min-width: 767px) {
+@media screen (min-width: 767px) {
+  body{
+    color:white;
+  }
   .meal-detail {
     flex-direction: row;
   }
@@ -349,6 +352,7 @@ cursor: pointer;
   padding: 0.6rem;
   font-size: 1rem;
   border: 1px solid white;
+  color:white;
   border-radius: 6px;
   height:fit-content;
   width:150px;
