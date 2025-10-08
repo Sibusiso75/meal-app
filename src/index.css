@@ -58,8 +58,12 @@ body {
   width:fit-content;
 }
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+     opacity: 0; transform: translateY(30px); 
+    }
+  to { 
+    opacity: 1; transform: translateY(0); 
+  }
 }
 
 .meal-grid {
@@ -326,7 +330,7 @@ body {
 cursor: pointer;
 }
 
-@media screen (min-width: 767px) {
+@media (min-width: 767px) {
   .meal-detail {
     flex-direction: row;
   }
